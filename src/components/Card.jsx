@@ -1,5 +1,6 @@
 import React from 'react';
 import CardTemp from "./CardTemp";
+import PropTypes from "prop-types";
 
 export default function Card({max, min, img,name,onClose}) {
   // acá va tu código
@@ -26,3 +27,11 @@ export default function Card({max, min, img,name,onClose}) {
     <img src={`http://openweathermap.org/img/wn/${img}@2x.png`} alt="Imagen del clima"/>
   </div>)
 };
+
+Card.prototypes={
+max: PropTypes.number,
+min: PropTypes.number,
+name: PropTypes.string,
+img: PropTypes.string,
+onClose: PropTypes.func,
+}
