@@ -7,11 +7,14 @@ export default function Card({max, min, img,name,onClose}) {
     if(typeof onClose==="function") onClose();
   }
   return (<div>
-    <button onClick={handleOnClose}>X</button>//Tenemos que pasar una función, no ejecutarla
-    <span>{name}</span>//Entre llaves porque estoy poniendo código js
+    <button onClick={handleOnClose}>X</button>
+    {/* Tenemos que pasar una función, no ejecutarla 
+    Entre llaves porque estoy poniendo código js  */}
+    <span>{name}</span>
     <div>
       <label>Min</label>
-      <span>{min}</span>// El valor me viene por propiedad
+      <span>{min}</span>
+      {/* El valor me viene por propiedad*/}
     </div>
     <div>
       <label>Max</label>
