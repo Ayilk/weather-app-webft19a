@@ -1,0 +1,125 @@
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 10rem;
+    height: 20vh;
+    color: #ffffff;
+}
+
+ .card+.card{/*Si tienes una carta  a la izquierda aplica el borde */
+    border-left: solid 1px #0000001e;
+}
+
+.card > img{
+    width: 5rem;
+    height: 5rem;
+}
+
+.primary{
+display: grid;
+grid-template-columns: 1fr 1fr;
+grid-template-rows: 5vh 15vh;
+width: 20rem;
+padding: 0 0.5rem;
+}
+
+ .primary > span{ /* Si el elemento hijo inmediato de primary es span, aplicar lo siguiente */
+    margin-top: 0.5rem;
+     grid-column: 1/ span 2;/* En la primer columna, usa dos columnas */
+}
+
+.primary > img{
+    width: 8rem;
+    height: 8rem;
+                                        }
+
+.name{
+    background-color: #0000005e;
+padding: 0.25rem 0.75rem;
+    border-radius: 999px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+}
+
+.button{
+    border: solid 1px transparent;
+    border-radius: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 1.5rem;
+    padding: 0;
+    height: 1.5rem;
+    align-items: center;
+    background-color: transparent;
+    transition: bacground-color 0.5s;
+    cursor: pointer;
+    color: turquoise; 
+    margin-left: 0.5rem;
+    margin-right: -0.5rem;
+}
+    
+
+.button:hover{
+    background-color: thistle;
+}
+
+
+
+
+/* .contenedor{
+display:grid;
+grid-template-columns: repeat(3,1fr);/* tres columnas del mismo tamaño
+grid-template-rows: (1fr,2fr);/*La fila de abajo es el doble de tamaño que la de arriba
+
+border-style: solid;
+border-width: 1px;
+border-color: blueviolet;
+border-radius: 10px;
+
+position: relative;
+
+
+}
+
+.btn{
+background-color: chartreuse;
+position: absolute;
+right: 0.5rem;
+top: 0.5rem;
+font-size: 1.5rem;
+color:var(--btn-danger-color);
+
+display: flex;
+justify-content: center;
+align-items: center;
+
+padding: 0.25;
+
+border-radius: 999px;
+border-style: solid;
+border-width: 2px;
+border-color: transparent;
+
+transition: 250ms;
+}
+
+.btn:hover{
+    color:white;
+    background-color: var(--btn-danger-color);
+}
+
+.cityName{
+    grid-column: 1/ span 3; /*EMpieza por la columna uno y se extiende
+    font-weight: 700;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-with:576px){
+    .card{
+        width: 25rem;
+    }
+}
+ */
