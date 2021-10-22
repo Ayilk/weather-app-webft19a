@@ -1,4 +1,6 @@
 import React from 'react';
+import styles from "./SearchBar.module.css";
+import {IoIosWater} from "react-icons/io"
 
 export default function SearchBar(onSearch) {
   // acá va tu código
@@ -8,8 +10,10 @@ export default function SearchBar(onSearch) {
       onSearch(input.value) 
     }
   }
-  return <div>
-    <input id="search-bar-input" />
-    <button onCLick={handleOnSearch}>Agregar</button>
+  return <div className={styles.searchBar} >
+    <input className={styles.input}
+    placeholder="Agrega una nueva ciudad"
+     id="search-bar-input" />
+    <button className={styles.button} onCLick={handleOnSearch}><IoIosWater/></button>
   </div>
 };

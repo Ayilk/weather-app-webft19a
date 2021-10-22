@@ -1,0 +1,115 @@
+.app{
+  /* background-image: url(./asets/bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute; */
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+
+.bkg{
+  width: 100vw;
+  height: 100vh;
+  backdrop-filter: blur(10px);
+  background-color: #77777770;
+}
+
+ .container{
+   width: 80vw;
+   height: 70vh;
+   /* position: absolute; */
+   margin: 15vh 15vw;
+   top:0px;
+  overflow: hidden; /*Elimina todo lo que no cabe en el contendor */
+ 
+  /* background-image: url(./asets/bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;  */
+
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 3fr 1fr;  /*La parte de abajo es un cuarto de la parte de arriba */
+}
+
+.citiesContainer{
+  display: flex;
+  height: 20vh;
+  background-color: #ffffff93;
+  backdrop-filter: blur(16px);
+  justify-content: space-between;
+}
+
+ .app,.container{ /*Cómo comparten código, los puedo juntar en uno solo para no repetir */
+  background-image: url(./asets/bkg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  position: absolute;
+  border-radius: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* .App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+} */

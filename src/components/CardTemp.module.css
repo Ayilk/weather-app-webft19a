@@ -1,0 +1,33 @@
+.temp{
+    display: flex;
+    flex-direction: column;
+    width: 3rem;
+    justify-content: center;
+    text-align: center;
+}
+.temps{
+    display: flex;
+   }
+
+
+.temp + .temp{/*  //si tengo temp a mi derecha, aplica el margen */
+  margin-left: 1rem;
+}
+
+
+
+/* .cardTemp{
+    display: flex;
+    flex-direction: column;
+} */
+
+
+/* .cardTemp > label{
+    text-transform: uppercase;
+    font-size: 0.75rem;
+}
+
+.cardTemp > span{
+    font-weight:  700;
+    font-size: 1rem;
+} */
